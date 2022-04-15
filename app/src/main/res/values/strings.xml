@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tools Shop</string>
+    <string name="logo_description">Логотип магазина инструментов</string>
+    <string name="logo_drill">Логотип дрели</string>
+    <string-array name="tools">
+        <item>Дрели</item>
+        <item>Перфораторы</item>
+        <item>Болгарки</item>
+    </string-array>
+
+    <string name="drill_interskol_title">Дрель интерскол</string>
+    <string name="drill_makita_title">Дрель макита</string>
+    <string name="drill_dewalt_title">Дрель деволт</string>
+
+    <string name="drill_interskol_info">Ударная дрель Interskol HP1630 имеет два режима работы: сверление и сверление с ударом. Прочная алюминиевая крышка корпуса редуктора.</string>
+    <string name="drill_makita_info">Ударная дрель Makita HP1630 имеет два режима работы: сверление и сверление с ударом. Прочная алюминиевая крышка корпуса редуктора.</string>
+    <string name="drill_dewalt_info">Ударная дрель Dewalt HP1630 имеет два режима работы: сверление и сверление с ударом. Прочная алюминиевая крышка корпуса редуктора.</string>
+</resources>
