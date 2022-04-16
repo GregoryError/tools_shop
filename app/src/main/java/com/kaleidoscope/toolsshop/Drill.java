@@ -13,6 +13,7 @@ public class Drill {
         this.imageResourceId = imageResourceId;
     }
 
+
     public String getTitle() {
         return title;
     }

@@ -29,11 +29,16 @@ public class DrillCategoryActivity extends AppCompatActivity {
 
 
         drills = new ArrayList<Drill>();
-        drills.add(new Drill(getString(R.string.drill_interskol_title), getString(R.string.drill_interskol_info), R.drawable.interskol_drill));
-        drills.add(new Drill(getString(R.string.drill_makita_title), getString(R.string.drill_makita_info), R.drawable.makita_drill));
-        drills.add(new Drill(getString(R.string.drill_dewalt_title), getString(R.string.drill_dewalt_info), R.drawable.dewalt_drill));
+
+        drills.add(new Drill(getString(R.string.drill_interskol_title), getString(R.string.drill_interskol_info),
+                R.drawable.interskol_drill));
+        drills.add(new Drill(getString(R.string.drill_makita_title), getString(R.string.drill_makita_info),
+                R.drawable.makita_drill));
+        drills.add(new Drill(getString(R.string.drill_dewalt_title), getString(R.string.drill_dewalt_info),
+                R.drawable.dewalt_drill));
         listViewDrills = findViewById(R.id.listViewDrills);
-        ArrayAdapter<Drill> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, drills);
+        ArrayAdapter<Drill> adapter = new ArrayAdapter<>(getApplicationContext(),
+                android.R.layout.simple_list_item_1, drills);
         listViewDrills.setAdapter(adapter);
         listViewDrills.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -44,7 +49,6 @@ public class DrillCategoryActivity extends AppCompatActivity {
                 intent.putExtra("info", drill.getInfo());
                 intent.putExtra("resId", drill.getImageResourceId());
                 startActivity(intent);
-
             }
         });
     }
